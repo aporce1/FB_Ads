@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 900px;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #6266b8aa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #a1e3f594);
+}
+.capaInicio {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #fff;
+}
+.hidden {display: none;}
+
+.App {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.CapaInicio {
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    left: 0px;
+    transition: all 0.2s ease 0s;
+    width: 37%;
+}
+.CapaInicio p {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  text-align: left;
+}
+.f12 {
+  font-size: 12px;
+}
+.f14 {
+  font-size: 14px;
+}
+.f16 {
+  font-size: 16px;
+}
+.cinza {
+  color: #8a8d91;
+}
+.black {
+  color: #000;
+}
+.bold {
+  font-weight: bold;
+}
+.Fb_ad_Container {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgb(57, 86, 147);
+  padding: 10px;
+  box-shadow: rgb(205, 205, 205) 0px 0px 20px 4px;
+}
+.btn {
+  color: rgb(147, 142, 142);
+  font-size: 12px;
+  border: 1px solid #cdcdcd;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.mainChat{
+  position: relative;
+  height: 800px;
+  width: 100%;
+  max-width: 100%;
+  transition: all 0.3s ease 0s;
+}
+.halfChat {
+  width: 60%;
+}
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
